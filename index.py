@@ -19,7 +19,7 @@ input.pack()
 input.focus_set()
 input.bind("<Return>", showFlag)
 
-photo = tk.PhotoImage(file='./All-Flags.png')
+photo = tk.PhotoImage(file='./splash.png')
 lbl = tk.Label(root, image=photo)
 lbl.pack()
 
