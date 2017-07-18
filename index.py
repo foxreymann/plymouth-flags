@@ -7,7 +7,7 @@ def showFlag(event):
     flagImgPath = "./flags/%s.png" %(countryName) 
     photo2 = tk.PhotoImage(file=flagImgPath)
     lbl.configure(image=photo2)
-    lbl.image = photo2
+    lbl.myass = photo2
 
 tk.Label(root, text = "enter county name to see it's flag").pack()
 
@@ -16,7 +16,7 @@ input.pack()
 input.focus_set()
 input.bind("<Return>", showFlag)
 
-photo = tk.PhotoImage(file='./flags/pt.png')
+photo = tk.PhotoImage(file='./fox.png')
 lbl = tk.Label(root, image=photo)
 lbl.pack()
 
