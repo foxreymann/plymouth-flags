@@ -7,6 +7,7 @@ def showFlag(event):
     flagImgPath = "./flags/%s.png" %(countryName) 
     photo2 = tk.PhotoImage(file='./flags/poland.png')
     lbl.configure(image=photo2)
+    lbl.image = photo2
 
 tk.Label(root, text = "enter county name to see it's flag").pack()
 
