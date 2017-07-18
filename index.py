@@ -1,10 +1,21 @@
 import tkinter as tk
+import pycountry
 
 root = tk.Tk()
 
 def showFlag(event):
+    '''
     countryName = input.get()
-    flagImgPath = "./flags/%s.png" %(countryName) 
+    flagImgPath = "./flags/%s.png" %(countryName)
+    photo2 = tk.PhotoImage(file=flagImgPath)
+    lbl.configure(image=photo2)
+    lbl.myass = photo2
+    '''
+
+    countryName = input.get()
+    country = pycountry.countries.get(name=countryName)
+    flagImgPath = "./flagopedia/%s.png" %(country.alpha_2.lower())
+    print(flagImgPath)
     photo2 = tk.PhotoImage(file=flagImgPath)
     lbl.configure(image=photo2)
     lbl.myass = photo2
