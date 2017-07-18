@@ -5,7 +5,7 @@ root = tk.Tk()
 def showFlag(event):
     countryName = input.get()
     flagImgPath = "./flags/%s.png" %(countryName) 
-    photo2 = tk.PhotoImage(file='./flags/poland.png')
+    photo2 = tk.PhotoImage(file=flagImgPath)
     lbl.configure(image=photo2)
     lbl.image = photo2
 
